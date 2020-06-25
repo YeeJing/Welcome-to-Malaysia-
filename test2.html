@@ -1,0 +1,192 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fun Adventure</title>
+    <link rel="icon" type="image/png" href="image/kisspng-hawaii-shoeblackplant-flower-clip-art-hibiscus-5abbd2caf227e8.5383641415222586349919.png">
+  
+<style>
+@font-face {
+    font-family:normal;
+    src: url(fonts/Oswald-Medium.ttf);
+}    
+    
+body{
+    background-color: #000162;
+    width: 100%;
+    height:100%;
+    margin: 0;
+}  
+
+h2{
+    color:beige;
+    margin-right: 2%;
+    opacity: .5;
+    float: right;
+    }
+    
+#Food{
+    margin:0 2%;  
+}
+      
+.dragme{
+    position:relative;
+    padding: 2%;
+    width: 200px;
+    height: 155px;
+    cursor: move;
+}
+      
+#draggable {
+    background-color: transparent;
+}
+
+button{
+    font-family: normal;
+    padding: 1% 2%;
+    font-size: 16px;
+}
+    
+#gobackbutton{
+    margin: 1%;
+}
+
+#nextbutton{
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    }
+</style> 
+
+</head> 
+<body> 
+    <a href="loading%20page.html"><button id="gobackbutton" type="button">Go back</button></a>
+    <h2>: Double click for more info<br>
+        : Try dragging the food</h2>
+    
+    <div id="Food">
+      <img src="image/Asset%201@4x.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="kari()">
+        
+    <img src="image/chickenrice.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="cr()"> 
+        
+        <img src="image/abc.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="ice()">
+        
+        <img src="image/cookie.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="pineapple()">
+        
+        <img src="image/curry.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="curry()">
+        
+         <img src="image/ketupat.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="ketu()">
+        
+         <img src="image/kuih.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="kuih()">
+        
+        <img src="image/milo.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="milo()">
+        
+        <img src="image/nasilemak.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="nl()">
+        
+        <img src="image/noodles.png" alt="drag-and-drop image script" title="drag-and-drop image script" class="dragme" ondblclick="mee()">
+    </div>
+    
+     <a href="final.html"><button id="nextbutton" type="button">Next</button></a>
+
+</body>
+
+<script>
+function startDrag(e) {
+				// determine event object
+				if (!e) {
+					var e = window.event;
+				}
+
+				// IE uses srcElement, others use target
+				var targ = e.target ? e.target : e.srcElement;
+
+				if (targ.className != 'dragme') {return};
+				// calculate event X, Y coordinates
+					offsetX = e.clientX;
+					offsetY = e.clientY;
+
+				// assign default values for top and left properties
+				if(!targ.style.left) { targ.style.left='0px'};
+				if (!targ.style.top) { targ.style.top='0px'};
+
+				// calculate integer values for top and left 
+				// properties
+				coordX = parseInt(targ.style.left);
+				coordY = parseInt(targ.style.top);
+				drag = true;
+
+				// move div element
+					document.onmousemove=dragDiv;
+				
+			}
+			function dragDiv(e) {
+				if (!drag) {return};
+				if (!e) { var e= window.event};
+				var targ=e.target?e.target:e.srcElement;
+				// move div element
+				targ.style.left=coordX+e.clientX-offsetX+'px';
+				targ.style.top=coordY+e.clientY-offsetY+'px';
+				return false;
+			}
+			function stopDrag() {
+				drag=false;
+			}
+			window.onload = function() {
+				document.onmousedown = startDrag;
+				document.onmouseup = stopDrag;
+			}
+            
+function kari(){
+    alert("Karipap");
+    alert("A small pie with curry chicken and potatoes filling in a deep-fried pastry shell.");
+}
+    
+function cr(){
+    alert(" Hainanese Chicken Rice");
+    alert("A dish of poached chicken and seasoned rice which is served with chili sauce and usually comes with cucumber garnishes.");
+}   
+    
+function ice(){
+    alert("Ais Batu Kacang(ABC)");
+    alert("A dessert from shaved ice and toppings. Suitable for summer.");
+}
+    
+function pineapple(){
+    alert("Nastar");
+    alert("Pineaplle tarts with pineapple filling and buttey pastery.");
+}
+    
+function curry(){
+    alert("Curry Fish Head");
+    alert("A dish with semi-stewed red snapper head in a Kerala-style curry with vegetables like okra and eggplants.");
+}
+    
+function ketu(){
+    alert("Ketupat");
+    alert("A type of malay dumpling made from rice packed inside a diamond-shaped container of woven palm leaf pouch.");
+}
+    
+function kuih(){
+    alert("Kuih");
+    alert("A bite size pudding made with glutinous rice.");
+}
+    
+function milo(){
+    alert("Milo");
+    alert("A chocolate and malt beverage, often served with sweetened condensed milk.");
+  
+}
+    
+function nl(){
+    alert("Nasi Lemak");
+    alert("A Malay fragrant rice dish cooked in coconut milk and pandan leaf.");
+}
+    
+function mee(){
+    alert("Asam Laksa");
+    alert("A spicy noodle soup with thick wheat noodles and chicken, prawn or fish, served in soup based on either rich and spicy curry coconut milk or on sour asam.")
+}    
+    
+</script>
+    
+</html>  

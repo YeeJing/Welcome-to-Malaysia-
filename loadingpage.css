@@ -1,0 +1,428 @@
+@font-face {
+  font-family:bold;
+  src: url(fonts/AlegreyaSans-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family:normal;
+    src: url(fonts/Oswald-Medium.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2.content{
+font: bold;
+letter-spacing: 1%;
+}
+
+#loadingpage{
+    background:#000162;
+    width: 100%;
+    height: 100%;
+}
+
+#text{
+    padding-top: 25%;
+    font-family: bold;
+}
+
+.percent-count{
+    width: 450px;
+    height: 50px;
+    margin:  auto;
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.progress-bar{
+    width: 506px;
+    height: 26px;
+    background-color: #bbb;
+    padding:3px;
+    margin: 50px auto;
+}
+
+.progress{
+    width: 25px;
+    height: 20px;
+    background-color: #f7ce46;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: .5s
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+/*tickets*/
+#myDiv {
+    text-align: center;
+    background-color: #f4dc79;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+#welcome{
+    font-family: bold;
+    color: #191970;
+    letter-spacing: 9px;
+    padding-top: 10em;
+}
+
+#boardplane{ 
+    display: inline-block;
+    background-color: #bb261a; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: normal;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin: 3% auto;
+}
+
+/*what type of adventurer are u?*/
+#menu{
+    margin: 0;
+    
+}
+
+.choice{
+    font-family: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    padding: 15%;
+
+}
+
+.choice:hover{
+    border: 8px dashed #f7ce46;
+}
+
+@media screen and (max-width:450px){
+.choice{
+    border-radius: 10px;
+    width: 40%;
+    margin: 10% 30%;
+    padding: 20%;
+}
+}
+
+h1.what{
+    text-align: center;
+    font-family: bold;
+    letter-spacing: 5px;
+    color: antiquewhite;
+    font-size: 300%;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 20%;
+     margin-right: 20%;
+}
+
+/*foodie*/
+#fo{
+    background-image: url(image/giphy.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+#gobackbutton2,
+#goback{
+    position: relative;
+    padding: 1% 2%;
+    margin: 1%;
+    font-family: normal;
+    font-size: 16px;
+}
+
+h3{
+    background-color: #f7ce46;
+    padding:2% 0; 
+}
+/*adventurer*/
+#ad{
+    background-image:url(image/tumblr_miff47qqMM1qhy6c9o2_400.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.white-stripe {
+    background: white;
+    text-align: center;
+    padding: 2% 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative; max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+    background-color: #000162;  
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+#time{
+font-family:normal;
+letter-spacing:1%;
+}
+
+#snorkel {
+background-image: url(image/coral-reef-area-in-langkawi.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;
+}
+
+#durian{
+background-image: url(image/durian.png);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;    
+}
+
+#dart{
+background-image: url(image/hayden-3.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;       
+}
+
+#mount{
+background-image: url(image/e2239c651f-19shutterstock-393716563.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;       
+}
+
+#kl{
+background-image: url(image/kltower.png);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;       
+}
+
+#Langkawi{
+background-image: url(image/Sky-Bridge-Langkawi.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+transition: 0.5s ease;       
+}
+
+#snorkel:hover,
+#durian:hover ,
+#dart:hover,
+#mount:hover,
+#kl:hover,
+#Langkawi:hover{         
+    background-size: 150%;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    color: yellow;
+}
+
+/* Container around content */
+.container {
+  padding: 0px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #FF9F55;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: transparent;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid inherit;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent inherit transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }   
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.half{
+    width:50%;
+    float:left;
+    position: relative;
+    margin-top: 1%;
+}
+
+.image{
+    background-color: #00014d; 
+}
+
+.text{
+    padding: 0 2%;
+    font-family: serif;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 40%;
+    margin: 2% 8%;
+}
+
+.responsive {
+    padding: 1%;
+    float: left;
+    width: 45%;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+  }
+}
+
+p{
+    color: black;
+}
+
+h4{
+    margin: 0;    
+}
+
+#last{
+    float: right;
+    padding: 1% 2%;
+    margin: 1%;
+    font-family: normal;
+    font-size: 16px;
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    left: 1.5em;
+    bottom: .5%;
+    width: 100%;
+    text-align: left;
+    margin: 0%;
+}
+
+p.footer{
+    color: white
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE>
+<html>
+    
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's start the adventure</title>
+    <link rel="stylesheet" href="loadingpage.css"> 
+    <link rel="icon" type="image/png" href="image/kisspng-hawaii-shoeblackplant-flower-clip-art-hibiscus-5abbd2caf227e8.5383641415222586349919.png">
+    
+</head>
+    
+<body onload="myFunction()" style="margin=0;">
+   <div id="loadingpage" >
+       <div id="text">
+            <div id="percentCount" class="percent-count"> 100% </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div> 
+            </div>
+        </div>
+    </div>
+    
+    <div style="display:none; " id="myDiv" class="animate-bottom">
+            <div class="wel">
+                <h2 id="welcome">WELCOME TO MALAYSIA!</h2>
+            </div> 
+                <img src="image/planetic.jpg" style="width:90%;height:30%;box-shadow: 10px 10px grey">
+        <div><button id="boardplane" onclick="board()">Click me to board</button></div>
+        </div>
+  
+    <div style="display: none; background-image: url(image/The_Petronas_Twin_Towers_&_KLCC_Park.jpg);height:auto;" id="Questions" class="menu">
+            <h1 class="what">What type of adventurer are you?</h1>
+            <button onclick="adventurer()" id="ad" class="choice">Adventurer</button>
+        <a href="test2.html" target="_blank"><button id="fo" class="choice" >Foodie</button></a>
+    </div>
+    
+    <!--adventurer route -->
+    <div style="display: none;" id="adventureroute">
+        <button id="gobackbutton2" type="button" onclick="backbutton2()">Go back</button>
+        <a href="final.html"><button id="last">next</button></a>
+        
+        <section class="white-stripe arrow">
+            <div class="middle">       
+                <h4>Destinations</h4>
+            </div>
+        </section>
+        
+        <div class="timeline">
+            <div class="container left">
+                <div class="content" id="snorkel" onclick="sno()">   
+                    <h2 id="time">Snorkeling in langkawi</h2></div></div>
+            
+            <div class="container right">
+                <div class="content" id="durian" onclick="fruit()">
+                    <h2 id="time">Eating durian</h2></div></div>
+            
+            <div class="container left">
+                <div class="content" id="dart" onclick="bdart()">
+                    <h2 id="time">Blow darts with the locals</h2></div></div>
+            
+            <div class="container right">
+                <div class="content" id="mount" onclick="kk()">   
+                    <h2 id="time">Climbing Mount Kinabalu</h2></div></div>
+            
+            <div class="container left">
+                <div class="content" id="kl" onclick="sb()">   
+                    <h2 id="time">Looking trough sky deck from Kuala Lumpur</h2></div></div>
+            
+            <div class="container right">
+                <div class="content" id="langkawi" onclick="langkawi()">   
+                    <h2 id="time">Looking trough sky bridge from Langkawi</h2></div></div>
+        </div>
+    
+    </div>
+    
+    <!-- Snorkeling -->
+    <div style="display: none;" id="snork">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text"> 
+            <h3>Snorkeling in Langkawi</h3>
+            <p> The main island of Langkawi itself has many wonderful beaches with white stretch of sands and several of them are great for swimming.</p>
+            <br>    
+ 
+                <h4>Best time to swim &amp; snorkel at Langkawi </h4>
+            <br>    
+                <p>Langkawi's weather  remains warm enough throughout the year for comfortable swimming and snorkeling. The water temperature varies between 29 to 30°C during the year. For snorkeling the best time is <strong>November - March</strong> when there is no rain and the water visibility is best. <strong>June - September</strong> is monsoon time, so expect rains.</p>
+            <br>
+            <h4>Best Langkawi Snorkeling Beaches</h4> 
+        <ul>
+            <li><strong><a href="https://www.langkawi-insight.com/langkawi_000026.htm" target="_blank">Datai Bay Beach</a></strong> : Unfortunately it is a private beach and enjoyed by the guests of The Datai Resort and The Andaman Resort. </li>
+            <li><strong><a href="https://www.langkawi-insight.com/langkawi_00001e.htm" target="_blank">Pulau Chabang</a></strong> : The water area around is excellent for snorkeling. You can see many different kinds of fish here. </li>
+            <li><strong><a href="https://www.langkawi-insight.com/langkawi_000048.htm" target="_blank">Pulau Payar Marine Park</a></strong> : The main attraction here is the black tipped baby sharks that will swim alongside you. You will also see many different types of fish here including the butterflyfish, the rare rabbitfish and lot more. </li>
+            </ul> 
+ 
+        </div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/(3)%20Baby%20Sharks.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/01110_b.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/langkawi-diving.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/langgg.jpg" width="100%" height="100%"></div></div></div>
+    </div>
+
+  <!-- Durian -->
+    <div style="display: none;" id="dur">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text"><h3>Durian testing</h3>
+            <br>
+            <p>It is the most famous of Malaysian fruits due to their powerful aroma, distinctive taste and custardy texture. Some people regard the durian as having a pleasantly sweet fragrance, whereas others find the aroma overpowering with an unpleasant odour. </p>
+        <br>
+        <h4>Top durians in Malaysia</h4>
+        <ul>
+            <li><strong><a href="https://www.durianharvests.com/durian-types/" target="_blank">Musang King</a></strong> : Smooth, buttery and bright yellow flesh</li>
+            <li><strong><a href="https://www.durianharvests.com/durian-types/" target="_blank">Black Pearl</a></strong> : Smooth and creamy, slightly bitter, has small seeds, lesser and pale greyish yellow flesh</li>
+            <li><strong><a href="https://www.durianharvests.com/durian-types/" target="_blank">D24</a></strong> : Creamy, bittersweet taste and golden yellow flesh </li>
+            <li><strong><a href="https://www.durianharvests.com/durian-types/" target="_blank">XO</a></strong> : Fermented taste and is extremely soft</li>
+            </ul></div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/buy-durian1.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/dud.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/htlpuxnhw1xiit7clk8t.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/maxresdefault.jpg" width="100%" height="100%"></div></div></div>
+    </div>      
+    
+    <!-- Blowingdart -->
+    <div style="display: none;" id="bd">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text">
+            <h3>Try Blowdarts in Mari Mari Culture village in Sabah</h3>
+            <p>It is located deep in the countryside away from the modern and developing Kota Kinabalu city. The village operates as a museum that preserves Borneo ethnic culture. It aims to share the knowledge, history, culture, and tradition of Borneo with you so that it is not forgotten. Mari Mari showcases each tribe to help guests understand how they lived – from their houses, hunting, farming, cooking and ceremonies and traditions – and gives an amazing insight into the tribal culture.   </p>
+                
+            <h4>Things to try</h4>
+            <ul>
+                <li>Trying dart blowing</li>
+                <li>Fresh honey</li>
+                <li>Traditional trampoline jumping</li>
+                <li>Getting henna tattoos</li>
+            </ul>
+      </div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/4462442.jpg" width="100%" height="100%">
+</div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/IMG_4498-1024x768.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/Borneo-Mari-Mari-Cultural-Village-blow-dart.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/hunter.jpg" width="100%" height="100%"></div></div></div>
+    </div>
+    
+    <!-- mount kinabalu -->
+    <div style="display: none;" id="kinabalu">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text">
+            <h3>Climbing Mount Kinabalu</h3>
+            <p>Standing majestically at 4,095m, Mount Kinabalu is the highest mountain between the Himalayas and New Guinea. The summit climb from the trailhead to the top covers 8.72 km.</p>
+                
+                <h4>Things you need to know before climbing</h4>
+            <ul>
+                <li>It takes two days and 1 night to reach the top.</li>
+                <li>There are only 120 climbing permits issued per day.</li>
+                <li>Busiest period is March - September</li>
+                <li>It cost about US&#36;500 - 600 per person</li>
+                <li><b>Official website</b> : <a href="https://www.mountkinabalu.com" target="_blank">Click me</a></li></ul>
+        </div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/climb-mount-kinabalu-01.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/DSC_0061.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/mount-kinabalu-via-ferrata-07_qvz3-4x.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/mt_kinabalu_summit.jpg" width="100%" height="100%"></div></div></div>
+    </div>
+    
+    <!-- kuala lumpur -->
+    <div style="display: none;" id="lumpur">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text"><h3>Looking out from the sky deck</h3>
+            <p>The Sky Deck is an open-air deck located 300 m above ground in KL Tower, and it is the highlight of KL Tower. It is spectacular and has an excellent 360-degree view of KL. You will feel the wind in your hair. The access to the Sky Deck is weather dependent.
+                <br><br>
+            There are two Sky Boxes on the Sky Deck, a glass box jutting out from the deck. If you dare, you can go out into this box, and you get a panorama view and some breathtaking photos of the whole of KL city as there is nothing but see-through glass between you and the ground below.
+                <br><br>
+            You get to the Sky Deck by elevator. The elevator takes only 54 seconds going up, and 52 seconds to come down. There is a KL Tower Towerthon Challenge every year, and you can sigh up to wakl up the 2058 to the top.</p> 
+                
+            <h4>Information</h4>
+                <ul>
+                <li>Opening hours Sky Deck: 09:00 – 22:00 every day (closed if raining, lightning, and thunder)</li>
+                <li>Ticket prices Sky Deck (including Sky Box and Observation Deck): RM 105 = US$ 25 (adult), RM 55 = US$ 13 (child 4-12 years old)</li>
+                <li>KL Tower Webpage</li>
+                <li><b>Official website</b> : <a href="https://www.menarakl.com.my" target="_blank">Click me</a></li>
+            </ul>
+</div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/27891582_1654217121287800_1452369390442905600_n.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/XQ82W-820x615.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/Sitting-In-Sky-Box-KL-Tower.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/kl-downtown.jpg" width="100%" height="100%"></div></div></div>
+    </div>
+    
+    <!-- Langkawi -->
+    <div style="display: none;" id="lang">
+        <div>
+            <button type="button" onclick="backbutton()" id="goback">Back</button></div>
+        
+        <div class="half text"> 
+            <h3>Walking through Sky Bridge in Langkawi</h3>
+            <p>It was completed in 2004 and opened to public on 27th February 2005. this suspended bridge is built on top of the Machinchang mountain. It is accessible from the Top Station, it swings out over the landscape to give visitors a unique spatial experience, and to bring them into otherwise unattainable locations, above virgin jungle with spectacular views. </p>
+            <h4>Facts</h4>
+            <ul>
+                <li><b>Total length </b>: 125 meters </li>
+                <li><b>Height of the only supporting structure</b> : 82 meters</li>
+                <li><b>Height</b> : 605 meters above sea level </li>
+                <li><b>Maximum capacity</b> : 250 persons at the same time</li>
+                <li><b>The area of the bridge</b> : 500 sq. meters </li>
+                <li><b>Official website</b> : <a href="http://www.panoramalangkawi.com/skybridge/" target="_blank">Click me</a></li>
+            </ul>
+ </div>
+        
+        <div class="half image">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/fixedw_large_4x.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/str2_mingskybridge_4_mingteoh-770x470.jpg" width="100%" height="100%"></div></div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/images.jpg" width="100%" height="100%"></div></div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="image/imageslan.jpg" width="100%" height="100%"></div></div></div>
+    </div>
+    
+<script>
+function progress(){
+    var prg = document.getElementById('progress');
+    var percent = document.getElementById('percentCount');
+    var counter = 5;
+    var progress = 25;
+    var id = setInterval(frame,20);
+    
+    function frame() {
+        if(progress == 500 && counter == 100) {
+            clearInterval(id);
+        } else {
+            progress += 5;
+            counter += 1;
+            prg.style.width = progress + 'px';
+            percent.innerHTML = counter + '%';
+        }}} 
+
+progress();
+    
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2500);
+}
+
+function showPage() {
+    document.getElementById("loadingpage").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+} 
+
+function board() { 
+    document.getElementById("myDiv").style.display = "none";
+    document.getElementById("Questions").style.display = "block";
+}
+    
+
+//adventurer route
+function adventurer() {
+    document.getElementById("Questions").style.display="none";
+    document.getElementById("adventureroute").style.display="block";
+}     
+    
+//go back 
+function backbutton2(){
+    document.getElementById("Questions").style.display="block";
+    document.getElementById("adventureroute").style.display="none";
+}
+
+//snorkel
+function sno(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("snork").style.display="block";
+}
+
+//durian
+function fruit(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("dur").style.display="block";
+}  
+  
+//blowing darts    
+function bdart(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("bd").style.display="block";
+}     
+
+//mountain    
+function kk(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("kinabalu").style.display="block";
+} 
+   
+//kuala lumpur    
+function sb(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("lumpur").style.display="block";
+} 
+    
+//Langkawi   
+function langkawi(){
+    document.getElementById("adventureroute").style.display="none";
+    document.getElementById("lang").style.display="block";
+} 
+    
+function backbutton(){
+    document.getElementById("adventureroute").style.display="block";
+    document.getElementById("snork").style.display="none";
+    document.getElementById("dur").style.display="none";
+    document.getElementById("bd").style.display="none";
+    document.getElementById("kinabalu").style.display="none";
+    document.getElementById("lumpur").style.display="none";
+    document.getElementById("lang").style.display="none";
+
+}
+</script>    
+</body>  
+    
+<footer>
+    <p>made by <u>Yee Jing Kan</u></p>
+</footer>
+    
+
+</html>

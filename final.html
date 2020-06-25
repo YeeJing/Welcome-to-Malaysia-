@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fun Adventure</title>
+    <link rel="icon" type="image/png" href="image/kisspng-hawaii-shoeblackplant-flower-clip-art-hibiscus-5abbd2caf227e8.5383641415222586349919.png">
+    
+    <style>
+@font-face {
+    font-family:normal;
+    src: url(fonts/Oswald-Medium.ttf);
+}
+        
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url(image/image.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: normal;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 2%;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+        
+button{
+    padding: 4% 10%;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}        
+        
+</style>
+    
+<body>
+
+<div class="bgimg">
+    <div class="topleft">
+        <img src="image/vm2022.png" width="25%" height="20%">
+    </div>
+    
+    <div class="middle">
+        <h1>Bought to you by</h1>
+        <h3>Visit Malaysia 2020</h3>
+    
+        <hr>
+        <p id="timer"></p>
+        <a href="index.html"><button>Play Again?</button></a>
+  
+    </div>
+  
+    <div class="bottomleft">
+        <p>Thanks for your time!</p>
+  </div>
+</div>
+    </body>
+    
+    <script>
+var countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+ 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+    
+    </head>
+</html>
